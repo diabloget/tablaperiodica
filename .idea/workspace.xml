@@ -1,22 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d86a962a-5946-4e4a-805d-8490da1e752d" name="Default Changelist" comment="" />
+    <list default="true" id="d86a962a-5946-4e4a-805d-8490da1e752d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/generalCode/preferences.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/horizontalGil/gilScreen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/horizontalInter/interScreen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/menu/appBarColor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/menu/menuDrawer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/menu/menuScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generalCode/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalGil/elementcase.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalGil/rowscolumns.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/horizontalGil/rowscolumns.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalGil/tablestack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/horizontalGil/tablestack.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalInter/elementcase.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/elementcase.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalInter/rowscolumns.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/horizontalInter/rowscolumns.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/horizontalInter/tablestack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/horizontalInter/tablestack.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tablaperiodica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tablaperiodica.iml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1aAXOjes8u6ZaGOQIOXsefLxhyz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ownprojects\tablaperiodica\lib\generalCode" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,11 +100,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585927578078</updated>
-      <workItem from="1585927587187" duration="712000" />
+      <workItem from="1585927587187" duration="1196000" />
+      <workItem from="1586179346863" duration="9571000" />
+      <workItem from="1586278647632" duration="5661000" />
+      <workItem from="1586708847372" duration="1366000" />
+      <workItem from="1586768153752" duration="19558000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/tablaperiodica" />
+    </ignored-roots>
   </component>
 </project>

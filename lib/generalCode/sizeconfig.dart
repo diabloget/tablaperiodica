@@ -16,6 +16,9 @@ class SizeConfig {
   static double fixerVertical;
   static double fixAllVer;
   static double fixAllHor;
+  static double fixLilVer;
+  static double fixLilHor;
+  static double fixLil;
 
   void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
@@ -38,5 +41,8 @@ class SizeConfig {
     fixerHorizontal = screenWidth.toInt()*6.0;
     fixAllVer= screenHeight.toInt() / 10;
     fixAllHor= screenWidth.toInt() / 10;
+    fixLilVer = screenHeight.toInt() /100;
+    fixLilHor = screenWidth.toInt() /100;
+    fixLil = fixLilHor*fixLilVer;
   }
 }

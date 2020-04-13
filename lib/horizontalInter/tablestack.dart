@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tablaperiodica/horizontalInter/elementcase.dart';
+import 'package:tablaperiodica/generalCode/elementcase.dart';
 import 'package:tablaperiodica/horizontalInter/containers.dart';
 import 'package:tablaperiodica/horizontalInter/rowscolumns.dart';
 import 'package:tablaperiodica/generalCode/sizeconfig.dart';
-
-
 import 'package:flutter/cupertino.dart';
 
 class HorizontalInterStack extends Stack{
@@ -62,7 +60,7 @@ class HorizontalInterStack extends Stack{
       Positioned(
         top: 14.10*SizeConfig.fixAllVer,
         left: 17.54*SizeConfig.fixAllHor,
-        child: Containers.elespecificcontainer(Elementcase.econtainer(1)),
+        child: Containers.elespecificcontainer(Elementcase.econtainer(1, 4, 2)),
       ),
       Positioned(
         top: 18.25*SizeConfig.fixAllVer,
@@ -141,7 +139,7 @@ class HorizontalInterStack extends Stack{
       Positioned(
         top: 14.10*SizeConfig.fixAllVer,
         right: 4.04*SizeConfig.fixAllHor,
-        child: Containers.elespecificcontainer(Elementcase.econtainer(2)),
+        child: Containers.elespecificcontainer(Elementcase.econtainer(2, 4, 2)),
       ),
 
       Positioned(

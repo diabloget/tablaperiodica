@@ -1,4 +1,4 @@
-import 'package:tablaperiodica/horizontalGil/elementcase.dart';
+import 'package:tablaperiodica/generalCode/elementcase.dart';
 import 'package:flutter/material.dart';
 import 'package:tablaperiodica/generalCode/theme.dart';
 import 'package:tablaperiodica/generalCode/sizeconfig.dart';
@@ -150,84 +150,13 @@ class RowsColumns{
     );
   }
 
-
-  static Row CRowf(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-      Elementcase.econtainer(z+2),
-      Elementcase.econtainer(z+3),
-      Elementcase.econtainer(z+4),
-      Elementcase.econtainer(z+5),
-      Elementcase.econtainer(z+6),
-      Elementcase.econtainer(z+7),
-      Elementcase.econtainer(z+8),
-      Elementcase.econtainer(z+9),
-      Elementcase.econtainer(z+10),
-      Elementcase.econtainer(z+11),
-      Elementcase.econtainer(z+12),
-      Elementcase.econtainer(z+13),
-    ]);
-  }
-
-  static Row CRowd(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-      Elementcase.econtainer(z+2),
-      Elementcase.econtainer(z+3),
-      Elementcase.econtainer(z+4),
-      Elementcase.econtainer(z+5),
-      Elementcase.econtainer(z+6),
-      Elementcase.econtainer(z+7),
-      Elementcase.econtainer(z+8),
-      Elementcase.econtainer(z+9),
-    ]);
-  }
-
-  static Row CRowd2nd(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-      Elementcase.econtainer(z+2),
-      Elementcase.econtainer(z+3),
-      Elementcase.econtainer(z+4),
-      Elementcase.econtainer(z+5),
-      Elementcase.econtainer(z+6),
-      Elementcase.econtainer(z+7),
-      Elementcase.econtainer(z+8),
-    ]);
-  }
-
-  static Row CRows(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-    ]);
-  }
-
-  static Row CRowp(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-      Elementcase.econtainer(z+2),
-      Elementcase.econtainer(z+3),
-      Elementcase.econtainer(z+4),
-      Elementcase.econtainer(z+5),
-    ]);
-  }
-
-  static Row CRowpPlusGas(int z) {
-    return Row(children: <Widget>[
-      Elementcase.econtainer(z),
-      Elementcase.econtainer(z+1),
-      Elementcase.econtainer(z+2),
-      Elementcase.econtainer(z+3),
-      Elementcase.econtainer(z+4),
-      Elementcase.econtainer(z+5),
-      Elementcase.econtainer(z+6),
-      Elementcase.econtainer(z+7),
-    ]);
+  static Row eleRow(int start, int end){
+    return Row(
+      children: <Widget>[
+        for(start in numbers(start, end))
+          Elementcase.econtainer(start, 3.6, 1.7)
+      ],
+    );
   }
 
   static Row families(){
@@ -241,6 +170,15 @@ class RowsColumns{
       Container(child: Center(child: textfamilies("VII")), margin: EdgeInsets.all(0.04*SizeConfig.fixAllHor), width: 1.7*SizeConfig.fixAllHor, color: Themes.themer("inwhite"),),
       Container(child: Center(child: textfamilies("VIII")), margin: EdgeInsets.all(0.04*SizeConfig.fixAllHor), width: 1.7*SizeConfig.fixAllHor, color: Themes.themer("inwhite"),)
     ]);
+  }
+
+  static List numbers(int start, int end){
+    var List = [];
+    while(start<=end){
+      List.add(start);
+      start++;
+    }
+    return List;
   }
 
 }

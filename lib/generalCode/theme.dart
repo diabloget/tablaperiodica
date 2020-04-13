@@ -1,10 +1,11 @@
 import 'dart:ui';
+import 'package:tablaperiodica/generalCode/preferences.dart';
 
 class Themes{
-  static int black = 1;
+  static Preferences _myPreferences = Preferences();
 
   static Color themer(String item){
-    if (black==1){
+    if (_myPreferences.blacktheme){
       if(item == "edge"){
         return Color.fromARGB(255, 0, 0, 0);
 
@@ -47,7 +48,7 @@ class Themes{
 
 
     }
-    if(black==0){
+    else{
 
       if(item == "edge"){
         return Color.fromARGB(255, 0, 0, 0);

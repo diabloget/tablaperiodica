@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tablaperiodica/horizontalInter/elementcase.dart';
+import 'package:tablaperiodica/generalCode/elementcase.dart';
 import 'package:tablaperiodica/generalCode/sizeconfig.dart';
 
 class RowsColumns{
@@ -59,7 +59,7 @@ class RowsColumns{
     return Row(
       children: <Widget>[
         for(start in numbers(start, end))
-          Elementcase.econtainer(start)
+          Elementcase.econtainer(start, 4, 2)
       ],
     );
   }

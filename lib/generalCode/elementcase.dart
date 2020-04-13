@@ -4,19 +4,19 @@ import 'package:tablaperiodica/generalCode/sizeconfig.dart';
 
 class Elementcase {
 
-  static Container econtainer(int z) {
+  static Container econtainer(int z, double h,  double w) {
     return Container(
       child: Column(
         children: <Widget>[
-          Text(z.toString(), style: TextStyle( fontSize: 0.32*SizeConfig.fixAllHor, color: Colors.black),),
-          Text(ElementList.elegetter(z+119), style: TextStyle( fontSize: 0.72*SizeConfig.fixAllHor, color: Colors.black),),
+          Text(z.toString(), style: TextStyle( fontSize: 0.30*SizeConfig.fixAllHor, color: Colors.black),),
+          Text(ElementList.elegetter(z+119), style: TextStyle( fontSize: 0.66*SizeConfig.fixAllHor, color: Colors.black),),
           Text(ElementList.elegetter(z-1), style: TextStyle( fontSize: 0.24*SizeConfig.fixAllHor, color: Colors.black),),
           Text(ElementList.elegetter(z+239), style: TextStyle( fontSize: 0.24*SizeConfig.fixAllHor, color: Colors.black),),
         ],
       ),
       color: knowcolor(z),
-      height: 4*SizeConfig.fixAllVer,
-      width: 2*SizeConfig.fixAllHor,
+      height: h*SizeConfig.fixAllVer,
+      width: w*SizeConfig.fixAllHor,
       margin: EdgeInsets.only(top: 0.08*SizeConfig.fixAllVer, bottom: 0.08*SizeConfig.fixAllVer, right: 0.04*SizeConfig.fixAllHor,left: 0.04*SizeConfig.fixAllHor),
     );
   }

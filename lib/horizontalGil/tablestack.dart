@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tablaperiodica/horizontalGil/elementcase.dart';
+import 'package:tablaperiodica/generalCode/elementcase.dart';
 import 'package:tablaperiodica/horizontalGil/genericcreator.dart';
 import 'package:tablaperiodica/horizontalGil/rowscolumns.dart';
 import 'package:tablaperiodica/generalCode/sizeconfig.dart';
@@ -29,12 +29,12 @@ class HorizontalGilStack extends Stack{
       Positioned(
         top: 3.724*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(1)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(1, 2)),
       ),
       Positioned(
         top: 3.724*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(2)),
+        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(2, 3.6, 1.7)),
       ),
 
 /*
@@ -49,99 +49,99 @@ class HorizontalGilStack extends Stack{
       Positioned(
         top: 7.484*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowpPlusGas(3)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(3, 10)),
       ),
       Positioned(
         top: 11.244*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowpPlusGas(11)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(11, 18)),
       ),
 
       Positioned(
         top: 15.005*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(19)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(19, 20)),
       ),
 
       Positioned(
         top: 18.756*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowd(21)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(21, 30)),
       ),
       Positioned(
         top: 18.756*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowp(31)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(31, 36)),
       ),
       Positioned(
         top: 22.527*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(37)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(37, 38)),
       ),
       Positioned(
         top: 26.288*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowd(39)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(39, 48)),
       ),
       Positioned(
         top: 26.288*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowp(49)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(49, 54)),
       ),
       Positioned(
         top: 30.049*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(55)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(55, 56)),
       ),
       Positioned( //27.502
         top: 33.81*SizeConfig.fixAllVer,
         right: 27.502*SizeConfig.fixAllHor,
-        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(57)),
+        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(57, 3.6, 1.7)),
       ),
       Positioned(
         top: 37.571*SizeConfig.fixAllVer,
         right: 27.502*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowf(58)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(58, 71)),
       ),
       Positioned(
         top: 37.571*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowd2nd(72)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(72, 80)),
       ),
       Positioned(
         top: 37.571*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowp(81)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(81, 86)),
       ),
       Positioned(
         top: 41.322*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(87)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(87, 88)),
       ),
       Positioned(
         top: 45.093*SizeConfig.fixAllVer,
         right: 27.502*SizeConfig.fixAllHor,
-        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(89)),
+        child: GenericCreator.elespecificcontainer(Elementcase.econtainer(89, 3.6, 1.7)),
       ),
       Positioned(
         top: 48.844*SizeConfig.fixAllVer,
         right: 27.502*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowf(90)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(90, 103)),
       ),
       Positioned(
         top: 48.844*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowd2nd(104)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(104, 112)),
       ),
       Positioned(
         top: 48.844*SizeConfig.fixAllVer,
         right: 0.8*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRowp(113)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(113, 118)),
       ),
       Positioned(
         top: 52.615*SizeConfig.fixAllVer,
         right: 11.48*SizeConfig.fixAllHor,
-        child: GenericCreator.elerowcontainer(RowsColumns.CRows(119)),
+        child: GenericCreator.elerowcontainer(RowsColumns.eleRow(119, 120)),
       ),
       Positioned(
         top: 1.7*SizeConfig.fixAllVer,
