@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d86a962a-5946-4e4a-805d-8490da1e752d" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/lib/generalCode/preferences.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/horizontalGil/gilScreen.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/horizontalInter/interScreen.dart" afterDir="false" />
@@ -23,6 +24,10 @@
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tablaperiodica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tablaperiodica.iml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

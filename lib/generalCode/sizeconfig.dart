@@ -37,8 +37,8 @@ class SizeConfig {
         safeAreaVertical) / 100;
 
     //My implementation from the code above
-    fixerVertical = screenHeight.toInt()*6.0;
-    fixerHorizontal = screenWidth.toInt()*6.0;
+    fixerVertical = screenHeight.toInt()*1.0;
+    fixerHorizontal = screenWidth.toInt()*1.0;
     fixAllVer= screenHeight.toInt() / 10;
     fixAllHor= screenWidth.toInt() / 10;
     fixLilVer = screenHeight.toInt() /100;
