@@ -44,7 +44,11 @@ class RowsColumns{
     return Container(
       height: SizeConfig.fixLilVerZ * 3,
       width: SizeConfig.fixerHorizontal - 8,
+<<<<<<< Updated upstream
       margin: EdgeInsets.only(bottom: SizeConfig.fixLilVerZ*0.4, left: SizeConfig.fixLilHorZ*0.2, right: SizeConfig.fixLilHorZ*0.2),
+=======
+      margin: EdgeInsets.only(bottom: SizeConfig.fixLilVerZ*0.4),
+>>>>>>> Stashed changes
       color: Themes.themer("inwhite"),
     );
   }

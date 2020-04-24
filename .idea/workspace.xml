@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="d86a962a-5946-4e4a-805d-8490da1e752d" name="Default Changelist" comment="">
 <<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/lib/generalCode/preferences.dart" afterDir="false" />
@@ -29,6 +30,9 @@
       <change beforePath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" afterDir="false" />
 >>>>>>> Stashed changes
     </list>
+=======
+    <list default="true" id="760e5223-fdfe-4aae-aff2-5058c347fcef" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
