@@ -3,7 +3,6 @@ import 'package:tablaperiodica/generalCode/preferences.dart';
 import 'package:tablaperiodica/generalCode/sizeconfig.dart';
 import 'package:tablaperiodica/generalCode/theme.dart';
 import 'package:tablaperiodica/menu/appBarColor.dart';
-import 'menuScreen.dart';
 
 class MenuDrawer extends StatefulWidget{
   @override
@@ -24,10 +23,10 @@ class MenuDrawerState extends State<MenuDrawer>{
               DrawerHeader(
                 decoration: AppBarColor.boxDecoration(),
                 child: Text(
-                  "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.008*SizeConfig.fixerHorizontal)),
+                  "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.65*SizeConfig.fixLil)),
               ),
               Container(
-                padding: EdgeInsets.only(left: 0.005*SizeConfig.fixerHorizontal, right: 0.005*SizeConfig.fixerHorizontal),
+                padding: EdgeInsets.only(left: 0.30*SizeConfig.fixLil, right: 0.30*SizeConfig.fixLil),
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
@@ -38,8 +37,8 @@ class MenuDrawerState extends State<MenuDrawer>{
                   child: Row(
                     children: <Widget>[
                       Text("Tema Oscuro", style: TextStyle(
-                          color: Themes.themer("letters"), fontSize: 0.0065*SizeConfig.fixerHorizontal)),
-                      Container(width: 0.035*SizeConfig.fixerHorizontal,),
+                          color: Themes.themer("letters"), fontSize: 0.35*SizeConfig.fixLil)),
+                      Container(width: 2.3*SizeConfig.fixLil, color: Colors.orange,),
                       Switch(
                         value: _myPreferences.blacktheme,
                         onChanged: (value) {
@@ -53,6 +52,19 @@ class MenuDrawerState extends State<MenuDrawer>{
                     ],
                   ),
                 )
+              ),
+              Slider(
+                value: _myPreferences.zoom,
+                divisions: 4,
+                max: 5,
+                min: 1,
+                onChanged: (value) {
+                  setState(() {
+                    _myPreferences.zoom = value;
+                    _myPreferences.commit();
+                  });
+                },
+                label: _myPreferences.zoom.toInt().toString(),
               ),
             ],
           ),

@@ -3,6 +3,7 @@ import 'package:tablaperiodica/generalCode/preferences.dart';
 import 'package:tablaperiodica/horizontalGil/gilScreen.dart';
 import 'package:tablaperiodica/horizontalInter/interScreen.dart';
 import 'package:tablaperiodica/menu/menuScreen.dart';
+import 'package:tablaperiodica/scrollTables/gilScrollScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         '/':(context) => MainScreen(),
         '/gil':(context) => GilScreen(),
         '/international':(context) => InterScreen(),
+        '/gil2':(context) => GilScrollScreen(),
       },
     );
   }

@@ -1,17 +1,12 @@
 import 'package:flutter/widgets.dart';
+import 'package:tablaperiodica/generalCode/preferences.dart';
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
   static double screenWidth;
   static double screenHeight;
-  static double blockSizeHorizontal;
-  static double blockSizeVertical;
 
-  static double safeAreaHorizontal;
-  static double safeAreaVertical;
-  static double safeBlockHorizontal;
-  static double safeBlockVertical;
-
+  static Preferences _myPreferences = Preferences();
   static double fixerHorizontal;
   static double fixerVertical;
   static double fixAllVer;
@@ -19,22 +14,17 @@ class SizeConfig {
   static double fixLilVer;
   static double fixLilHor;
   static double fixLil;
+  static double fixLilZoomed;
+
+  static double fixVerZoomed;
+  static double fixHorZoomed;
+  static double fixLilVerZ;
+  static double fixLilHorZ;
 
   void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
-    blockSizeHorizontal = screenWidth / 100;
-    blockSizeVertical = screenHeight / 100;
-
-    safeAreaHorizontal = _mediaQueryData.padding.left +
-        _mediaQueryData.padding.right;
-    safeAreaVertical = _mediaQueryData.padding.top +
-        _mediaQueryData.padding.bottom;
-    safeBlockHorizontal = (screenWidth -
-        safeAreaHorizontal) / 100;
-    safeBlockVertical = (screenHeight -
-        safeAreaVertical) / 100;
 
     //My implementation from the code above
     fixerVertical = screenHeight.toInt()*6.0;
@@ -44,5 +34,12 @@ class SizeConfig {
     fixLilVer = screenHeight.toInt() /100;
     fixLilHor = screenWidth.toInt() /100;
     fixLil = fixLilHor*fixLilVer;
+    fixLilZoomed = fixLil*_myPreferences.zoom;
+
+    fixVerZoomed = screenHeight * _myPreferences.zoom;
+    fixHorZoomed = screenWidth * _myPreferences.zoom;
+    fixLilVerZ = fixVerZoomed/100;
+    fixLilHorZ = fixHorZoomed/100;
+
   }
 }

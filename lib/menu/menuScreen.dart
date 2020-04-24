@@ -55,7 +55,7 @@ class MainScreenState extends State<MainScreen> {
                     DeviceOrientation.landscapeLeft,
                     DeviceOrientation.landscapeLeft,
                   ]);
-                  Navigator.pushNamed(context, '/gil');
+                  Navigator.pushNamed(context, '/gil2');
                 },
               ),
               ListTile(
