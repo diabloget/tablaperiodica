@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context) => MainScreen(),
         '/gil':(context) => GilScreen(),
-        '/international':(context) => InterScreen(),
+        '/international':(context) => GilScrollScreen(),
         '/gil2':(context) => GilScrollScreen(),
       },
     );

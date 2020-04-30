@@ -27,8 +27,8 @@ class SizeConfig {
     screenHeight = _mediaQueryData.size.height;
 
     //My implementation from the code above
-    fixerVertical = screenHeight.toInt()*6.0;
-    fixerHorizontal = screenWidth.toInt()*6.0;
+    fixerVertical = screenHeight.toInt()*1.0;
+    fixerHorizontal = screenWidth.toInt()*1.0;
     fixAllVer= screenHeight.toInt() / 10;
     fixAllHor= screenWidth.toInt() / 10;
     fixLilVer = screenHeight.toInt() /100;
@@ -41,5 +41,6 @@ class SizeConfig {
     fixLilVerZ = fixVerZoomed/100;
     fixLilHorZ = fixHorZoomed/100;
 
+    print("FixLilZoomed = " + fixLilZoomed.toString());
   }
 }

@@ -19,24 +19,17 @@ class GilScroll{
             ),
           ),
 
-          //Right Side
-          Align(
-            alignment: Alignment.centerRight,
-            child: GContainers.gilRighter(),
-          ),
-
-          //Left Side
+          //Left & Right Sides
           Positioned(
-            top: SizeConfig.fixLilVerZ * 5.0,
+            top: SizeConfig.fixLilVerZ * 3.2,
             left: SizeConfig.fixLilHorZ * 0.2,
-            child: GContainers.gilLefter(RowsColumns.nivelrow()),
+            child: GContainers.gilSides(RowsColumns.leftRow()),
           ),
-
-          Align(
-            alignment: Alignment.topCenter,
-            child: GContainers.gilTopper(RowsColumns.topcont()),
+          Positioned(
+            top: SizeConfig.fixLilVerZ * 3.2,
+            right: SizeConfig.fixLilHorZ * 0.2,
+            child: GContainers.gilSides(RowsColumns.rightCol()),
           ),
-
 
         ],
       ),

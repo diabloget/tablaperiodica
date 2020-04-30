@@ -22,11 +22,16 @@ class MenuDrawerState extends State<MenuDrawer>{
             children: <Widget>[
               DrawerHeader(
                 decoration: AppBarColor.boxDecoration(),
-                child: Text(
-                  "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.65*SizeConfig.fixLil)),
+                child: FittedBox(
+                  alignment: Alignment.topLeft,
+                  child: Text(
+                      "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.65*SizeConfig.fixLil)
+                  ),
+                ),
               ),
-              Container(
-                padding: EdgeInsets.only(left: 0.30*SizeConfig.fixLil, right: 0.30*SizeConfig.fixLil),
+              FittedBox(
+                //padding: EdgeInsets.only(left: 0.30*SizeConfig.fixLil, right: 0.30*SizeConfig.fixLil),
+                fit: BoxFit.fitWidth,
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
@@ -35,19 +40,25 @@ class MenuDrawerState extends State<MenuDrawer>{
                     });
                   },
                   child: Row(
-                    children: <Widget>[
-                      Text("Tema Oscuro", style: TextStyle(
-                          color: Themes.themer("letters"), fontSize: 0.35*SizeConfig.fixLil)),
-                      Container(width: 2.3*SizeConfig.fixLil, color: Colors.orange,),
-                      Switch(
-                        value: _myPreferences.blacktheme,
-                        onChanged: (value) {
-                          setState(() {
-                            _myPreferences.blacktheme = value;
-                            _myPreferences.commit();
-                            Navigator.pushNamed(context, '/');
-                          });
-                        },
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(left: 0.7*SizeConfig.fixLilVer, right: 5.0*SizeConfig.fixLilVer),
+                        child: Text(
+                            "Tema Oscuro", style: TextStyle(color: Themes.themer("letters"))
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(right: 0.25*SizeConfig.fixLilVer),
+                        child: Switch(
+                          value: _myPreferences.blacktheme,
+                          onChanged: (value) {
+                            setState(() {
+                              _myPreferences.blacktheme = value;
+                              _myPreferences.commit();
+                              Navigator.pushNamed(context, '/');
+                            });
+                          },
+                        ),
                       ),
                     ],
                   ),
@@ -55,8 +66,8 @@ class MenuDrawerState extends State<MenuDrawer>{
               ),
               Slider(
                 value: _myPreferences.zoom,
-                divisions: 4,
-                max: 5,
+                divisions: 3,
+                max: 4,
                 min: 1,
                 onChanged: (value) {
                   setState(() {

@@ -4,20 +4,35 @@ import 'package:tablaperiodica/generalCode/sizeconfig.dart';
 
 class Elementcase {
 
-  static Container econtainer(int z, double h,  double w, double sizer) {
+  static Container gElContainer(int z) {
     return Container(
       child: Column(
         children: <Widget>[
-          Text(z.toString(), style: TextStyle( fontSize: 0.30*SizeConfig.fixAllHor, color: Colors.black),),
-          Text(ElementList.elegetter(z+119), style: TextStyle( fontSize: 0.66*SizeConfig.fixAllHor, color: Colors.black),),
-          Text(ElementList.elegetter(z-1), style: TextStyle( fontSize: 0.24*SizeConfig.fixAllHor, color: Colors.black),),
-          Text(ElementList.elegetter(z+239), style: TextStyle( fontSize: 0.24*SizeConfig.fixAllHor, color: Colors.black),),
+          globalsizer(z.toString(), SizeConfig.fixLilVerZ * 1.4),
+          globalsizer(ElementList.elegetter(z+119), SizeConfig.fixLilVerZ * 2.6),
+          globalsizer(ElementList.elegetter(z-1), SizeConfig.fixLilVerZ * 1.1),
+          globalsizer(ElementList.elegetter(z+239), SizeConfig.fixLilVerZ * 1.1)
         ],
       ),
       color: knowcolor(z),
-      height: h*SizeConfig.fixAllVer,
-      width: w*SizeConfig.fixAllHor,
-      margin: EdgeInsets.only(top: 0.08*SizeConfig.fixAllVer, bottom: 0.08*SizeConfig.fixAllVer, right: 0.04*SizeConfig.fixAllHor,left: 0.04*SizeConfig.fixAllHor),
+      height: SizeConfig.fixLilVerZ * 6.2,
+      width: SizeConfig.fixLilHorZ * 3.0,
+      margin: EdgeInsets.only(left: SizeConfig.fixLilHorZ*0.075, right: SizeConfig.fixLilHorZ*0.075, top: SizeConfig.fixLilVerZ*0.4, bottom: SizeConfig.fixLilVerZ*0.4),
+    );
+  }
+
+
+  static Container globalsizer(String child, double height){
+    return Container(
+      height: height,
+      child: FittedBox(
+        fit: BoxFit.fitHeight,
+        child: FittedBox(
+          fit: BoxFit.fitWidth,
+          //child: Center(child: Text(child)),
+          child: Text(child),
+        ),
+      ),
     );
   }
 

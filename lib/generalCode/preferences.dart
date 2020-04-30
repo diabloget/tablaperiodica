@@ -1,3 +1,5 @@
+
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Preferences{
@@ -20,7 +22,7 @@ class Preferences{
     if(_sharedPreferences != null){
       return _sharedPreferences;
     }else{
-      _sharedPreferences = await SharedPreferences.getInstance();
+      _sharedPreferences = await  SharedPreferences.getInstance();
       blacktheme = _sharedPreferences.getBool(BLACKTHEME);
       zoom = _sharedPreferences.getDouble(ZOOM);
 

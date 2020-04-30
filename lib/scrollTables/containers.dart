@@ -3,7 +3,7 @@ import 'package:tablaperiodica/generalCode/sizeconfig.dart';
 import 'package:tablaperiodica/generalCode/theme.dart';
 
 class GContainers{
-  static Container gilLefter(Column child){
+  static Container gilSides(Column child){
     return Container(
       color: Themes.themer("edge"),
       child: child,
@@ -11,14 +11,25 @@ class GContainers{
     );
   }
 
-  static Container gilRighter(){
+  static Container gilTopper(Row child){
     return Container(
-
+      color: Themes.themer("edge"),
+      child: child,
+      padding: EdgeInsets.only(right: SizeConfig.fixLilHorZ * 0.075 , left: SizeConfig.fixLilHorZ * 0.075)
     );
   }
 
-  static Container gilTopper(Container child){
+  static Container gilBotter(Row child){
     return Container(
+      color: Themes.themer("edge"),
+      child: child,
+      padding: EdgeInsets.only(right: SizeConfig.fixLilHorZ * 0.075 , left: SizeConfig.fixLilHorZ * 0.075)
+    );
+  }
+
+  static Container gilElementer(Row child){
+    return Container(
+      padding: EdgeInsets.only(right: SizeConfig.fixLilHorZ * 0.075 , left: SizeConfig.fixLilHorZ * 0.075),
       color: Themes.themer("edge"),
       child: child,
     );
