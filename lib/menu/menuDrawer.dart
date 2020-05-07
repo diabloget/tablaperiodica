@@ -25,7 +25,7 @@ class MenuDrawerState extends State<MenuDrawer>{
                 child: FittedBox(
                   alignment: Alignment.topLeft,
                   child: Text(
-                      "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.65*SizeConfig.fixLil)
+                      "Preferencias", style: TextStyle(color: Color.fromARGB(255, 187, 187, 187), fontSize: 0.65*SizeConfig.fixLilVer)
                   ),
                 ),
               ),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tablaperiodica/generalCode/preferences.dart';
 import 'package:tablaperiodica/horizontalGil/gilScreen.dart';
-import 'package:tablaperiodica/horizontalInter/interScreen.dart';
 import 'package:tablaperiodica/menu/menuScreen.dart';
-import 'package:tablaperiodica/scrollTables/gilScrollScreen.dart';
+import 'package:tablaperiodica/scrollTables/scrollScreens.dart';
 
 void main() => runApp(MyApp());
 

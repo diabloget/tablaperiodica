@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f486912-4e91-46bc-8264-f0f39e33071f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generalCode/preferences.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/preferences.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generalCode/sizeconfig.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/menu/menuDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu/menuDrawer.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/scrollTables/containers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/containers.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scrollTables/eleContainer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/eleContainer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scrollTables/gilEleStack.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/gilEleStack.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scrollTables/gilScroll.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/gilScroll.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scrollTables/gilScroll.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/bothScrolls.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scrollTables/gilScrollScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/scrollScreens.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scrollTables/rowscolumns.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Dart" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -114,7 +108,16 @@
       <workItem from="1587953522150" duration="9038000" />
       <workItem from="1588033868507" duration="1462000" />
       <workItem from="1588094118454" duration="16510000" />
-      <workItem from="1588181282371" duration="23950000" />
+      <workItem from="1588181282371" duration="25965000" />
+      <workItem from="1588255908491" duration="4538000" />
+      <workItem from="1588401133875" duration="999000" />
+      <workItem from="1588460297191" duration="6744000" />
+      <workItem from="1588541147816" duration="944000" />
+      <workItem from="1588555932841" duration="1207000" />
+      <workItem from="1588576438538" duration="655000" />
+      <workItem from="1588738769413" duration="634000" />
+      <workItem from="1588758009302" duration="4395000" />
+      <workItem from="1588811886786" duration="351000" />
     </task>
     <servers />
   </component>

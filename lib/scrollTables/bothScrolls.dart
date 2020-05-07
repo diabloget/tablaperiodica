@@ -35,6 +35,33 @@ class GilScroll{
       ),
     );
   }
+}
 
+class InterScroll{
+
+  static SingleChildScrollView InterScroller(){
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Stack(
+        children: <Widget>[
+          //Stack with all the elements and little information.
+          Center(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: GilEleStack.gilstacker(),
+            ),
+          ),
+
+          //Left & Right Sides
+          Positioned(
+            top: SizeConfig.fixLilVerZ * 3.2,
+            left: SizeConfig.fixLilHorZ * 0.2,
+            child: GContainers.gilSides(RowsColumns.leftRow()),
+          ),
+
+        ],
+      ),
+    );
+  }
 
 }
